@@ -28,11 +28,12 @@ export class CategoriasPage {
   }
 
   ionViewDidLoad() {
-    this.categoriaService.findAll().subscribe(res => {
+    this.categoriaService.findAll().subscribe(
+      res => {
       this.items = res;
-    }, error => {
-      console.error(error);
-    });
+    }, 
+      error => {}
+    );
   }
 
 }
